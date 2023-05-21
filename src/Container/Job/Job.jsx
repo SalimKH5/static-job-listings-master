@@ -9,10 +9,14 @@ function Job({require,setRequire,item}) {
             <div className="job-detail">
                 <div className="Job-image">
                     <img src={item.logo} alt="" />
+
                 </div>
                 <div className="Details">
                     <div className="first-detail">
                         <h3>{item.company}</h3>
+                        {item.new? <p id="new-container">New!</p>:"" }
+                        {item.featured? <p id="new-featured">Featured</p>:"" }
+
                     </div>
                     <div className="second-detail">
                         <h3>{item.position}</h3>
